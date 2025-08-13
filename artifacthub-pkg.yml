@@ -4,32 +4,32 @@
 #
 # This config can be saved to its default location with:
 #   kwctl scaffold artifacthub > artifacthub-pkg.yml 
-version: 1.0.3
+version: 1.0.4
 name: unique-service-selector-policy
 displayName: Unique service selector
-createdAt: 2025-07-14T10:25:45.948127532Z
+createdAt: 2025-08-13T14:02:51.989325889Z
 description: Policy validates that there are no services with the same set of selectors
 license: Apache-2.0
 homeURL: https://github.com/kubewarden/unique-service-selector-policy
 containersImages:
 - name: policy
-  image: ghcr.io/kubewarden/policies/unique-service-selector-policy:v1.0.3
+  image: ghcr.io/kubewarden/policies/unique-service-selector-policy:v1.0.4
 keywords:
 - service
 - selector
 links:
 - name: policy
-  url: https://github.com/kubewarden/unique-service-selector-policy/releases/download/v1.0.3/policy.wasm
+  url: https://github.com/kubewarden/unique-service-selector-policy/releases/download/v1.0.4/policy.wasm
 - name: source
   url: https://github.com/kubewarden/unique-service-selector-policy
 install: |
   The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
   ```console
-  kwctl pull ghcr.io/kubewarden/policies/unique-service-selector-policy:v1.0.3
+  kwctl pull ghcr.io/kubewarden/policies/unique-service-selector-policy:v1.0.4
   ```
   Then, generate the policy manifest and tune it to your liking. For example:
   ```console
-  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kubewarden/policies/unique-service-selector-policy:v1.0.3
+  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kubewarden/policies/unique-service-selector-policy:v1.0.4
   ```
 maintainers:
 - name: Kubewarden developers
